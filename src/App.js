@@ -18,8 +18,7 @@ function App() {
 
   return (
     <div style={{...theme.App.div.style}} className="App">
-      <TopBar theme={theme} />
-      <button onClick={() => {toggleTheme()}}>test</button>
+      <TopBar theme={theme} toggleTheme={toggleTheme}/>
     </div>
   );
 }
