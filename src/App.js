@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import TopBar from './components/TopBar/TopBar';
 import DARK_THEME from './themes/darkTheme'
