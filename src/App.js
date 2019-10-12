@@ -1,24 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TopBar from './components/TopBar/TopBar';
+import DARK_THEME from './themes/darkTheme'
+import LIGHT_THEME from './themes/lightTheme'
 
 function App() {
+  const [theme, setTheme] = useState(DARK_THEME)
+  document.body.style.backgroundColor = theme.App.body.style.backgroundColor
+
+  function toggleTheme(){
+    if (theme === DARK_THEME) {
+      setTheme(LIGHT_THEME)
+    } else {
+      setTheme(DARK_THEME)
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{...theme.App.div.style}} className="App">
+      <TopBar theme={theme} />
+      <button onClick={() => {toggleTheme()}}>test</button>
     </div>
   );
 }
