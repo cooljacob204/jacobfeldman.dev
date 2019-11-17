@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import TopBar from './components/TopBar/TopBar';
+import Content from './components/Content/Content';
 import DARK_THEME from './themes/darkTheme'
 import LIGHT_THEME from './themes/lightTheme'
 
@@ -19,6 +20,7 @@ function App() {
   return (
     <div style={{...theme.App.div.style}} className="App">
       <TopBar theme={theme} toggleTheme={toggleTheme}/>
+      <Content theme={theme} />
     </div>
   );
 }
