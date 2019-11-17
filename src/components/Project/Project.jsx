@@ -1,5 +1,4 @@
 import React from 'react'
-import { nullLiteral } from '@babel/types'
 
 export default function Project(props) {
   return (
