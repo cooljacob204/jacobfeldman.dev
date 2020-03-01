@@ -6,4 +6,4 @@ COPY ./ /app
 
 RUN cd app && npm run-script build
 
-CMD ["http-server", "./build"]
+CMD ["http-server", "./app/build"]
