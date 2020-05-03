@@ -18,7 +18,7 @@ export default function TopBar(props){
           ></img>
         </div>
       </div>
-      <div style={{display: 'flex', flexDirection: 'row-reverse' }}>
+      <div style={{display: 'flex', flexDirection: 'row-reverse', marginLeft: '10px'}}>
         <Github style={{ padding: '2px', marginRight: '10px' }} theme={props.theme} />
         <Linkedin style={{ padding: '2px', marginRight: '10px' }} theme={props.theme} />
       </div>
