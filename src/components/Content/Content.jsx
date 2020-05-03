@@ -1,5 +1,5 @@
 import React from 'react'
-import Project from '../Project/Project'
+import Projects from '../Project/Projects'
 import { MyPicture, MyBio, MyName } from '../Me/Me'
 
 export default function Content(props) {
@@ -8,6 +8,7 @@ export default function Content(props) {
       <MyPicture />
       <MyName />
       <MyBio />
+      <Projects />
     </div>
   )
 }
