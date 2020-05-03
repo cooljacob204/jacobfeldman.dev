@@ -1,11 +1,17 @@
+.projects h3{
+  margin-bottom: 0px;
+}
+
 .project{
-  padding-left: 1em;
 }
 
 .project p{
   margin: 2px 0;
+  /* padding-left: 1em; */
 }
 
 .project h4{
-  margin: 2px 0px;
+  font-weight: 400;
+  margin: 10px 0 2px 0;
+  text-decoration: underline;
 }
