@@ -1,13 +1,14 @@
 import React from 'react'
 import Github from '../logos/Github'
 import Linkedin from '../logos/Linkedin'
+import './TopBar.css';
 
 export default function TopBar(props){
   return (
-    <header style={{ display: 'grid', gridTemplateColumns: '50% 50%', width: '100%', height: '40px', ...props.theme.TopBar.header.style}}>
+    <header className='header' style={{...props.theme.TopBar.header.style}}>
       <div style={{ display: 'flex' }}>
         <div style={{ fontSize: '1.9em', paddingLeft: '10px' }}>jacobfeldman.dev</div>
-        <div style={{ marginLeft: '10px', padding: '2px' }}>
+        <div className='header__theme-toggle-wrapper'>
           <img 
             style={{ cursor: 'pointer' }} 
             src={props.theme.TopBar.header.icon.src} 
