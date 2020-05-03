@@ -4,7 +4,8 @@ const LIGHT_THEME = {
   logos: {
     Github: { img: 'GitHub-Mark-120px-plus.png' },
     Linkedin: { img: 'linkedin-dark-128px.png'}
-  }
+  },
+  stylesheet: 'themes/lightTheme.css'
 }
 
 export default LIGHT_THEME

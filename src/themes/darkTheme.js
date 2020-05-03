@@ -4,7 +4,8 @@ const DARK_THEME = {
   logos: {
     Github: { img: 'GitHub-Mark-Light-120px-plus.png' },
     Linkedin: { img: 'linkedin-white-128px.png' }
-  }
+  },
+  stylesheet: 'themes/darkTheme.css'
 }
 
 export default DARK_THEME
