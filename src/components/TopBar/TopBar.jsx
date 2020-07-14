@@ -13,8 +13,8 @@ export default function TopBar(props){
       </div>
       <div style={{display: 'flex', flexDirection: 'row-reverse', marginLeft: '10px'}}>
         <div className='header__theme-toggle-wrapper custom-control custom-switch'>
-          <input type="checkbox" class="custom-control-input" id="customSwitch1" checked={props.theme.name === 'Dark Theme'} onChange={() => props.toggleTheme()}/>
-          <label class="custom-control-label" for="customSwitch1">Dark Mode</label>
+          <input type="checkbox" className="custom-control-input" id="customSwitch1" checked={props.theme.name === 'Dark Theme'} onChange={() => props.toggleTheme()}/>
+          <label className="custom-control-label" for="customSwitch1">Dark Mode</label>
         </div>
         <Github style={{ padding: '2px', marginRight: '10px' }} theme={props.theme} />
         <Linkedin style={{ padding: '2px', marginRight: '10px' }} theme={props.theme} />
