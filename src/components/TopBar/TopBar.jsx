@@ -3,7 +3,6 @@ import Github from '../logos/Github'
 import Linkedin from '../logos/Linkedin'
 
 import './TopBar.css';
-import { ThemeConsumer } from 'react-bootstrap/esm/ThemeProvider';
 
 export default function TopBar(props){
   return (
@@ -14,7 +13,7 @@ export default function TopBar(props){
       <div style={{display: 'flex', flexDirection: 'row-reverse', marginLeft: '10px'}}>
         <div className='header__theme-toggle-wrapper custom-control custom-switch'>
           <input type="checkbox" className="custom-control-input" id="customSwitch1" checked={props.theme.name === 'Dark Theme'} onChange={() => props.toggleTheme()}/>
-          <label className="custom-control-label" for="customSwitch1">Dark Mode</label>
+          <label className="custom-control-label" htmlFor="customSwitch1">Dark Mode</label>
         </div>
         <Github style={{ padding: '2px', marginRight: '10px' }} theme={props.theme} />
         <Linkedin style={{ padding: '2px', marginRight: '10px' }} theme={props.theme} />
