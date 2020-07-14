@@ -7,7 +7,7 @@ import LIGHT_THEME from './themes/lightTheme.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const [theme, setTheme] = useState(DARK_THEME)
+  const [theme, setTheme] = useState(defaultTheme())
   document.body.style.backgroundColor = theme.App.body.style.backgroundColor
 
   function toggleTheme(){
@@ -15,6 +15,14 @@ function App() {
       setTheme(LIGHT_THEME)
     } else {
       setTheme(DARK_THEME)
+    }
+  }
+
+  function defaultTheme(){
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches){
+      return LIGHT_THEME
+    } else {
+      return DARK_THEME
     }
   }
 
