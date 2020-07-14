@@ -4,6 +4,7 @@ import TopBar from './components/TopBar/TopBar';
 import Content from './components/Content/Content';
 import DARK_THEME from './themes/darkTheme.js'
 import LIGHT_THEME from './themes/lightTheme.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [theme, setTheme] = useState(DARK_THEME)
