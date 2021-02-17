@@ -38,12 +38,12 @@ html, body, .App{
 }
 
 .top > .project {
-  margin-left: 195px;
+  margin-left: 72px;
 }
 
 @media screen and (max-width: 864px) {
   .top > .project {
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 10px;
   }
 
