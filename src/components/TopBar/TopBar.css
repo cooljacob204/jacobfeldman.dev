@@ -8,6 +8,6 @@
 
 .header__theme-toggle-wrapper {
   margin: 0 10px;
-  -webkit-user-select: none;
+  user-select: none;
   align-self: center;
 }

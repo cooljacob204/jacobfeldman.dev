@@ -1,14 +1,10 @@
-.projects h3{
-  margin-bottom: 0px;
+.projects {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.project p{
-  margin: 2px 0;
-  /* padding-left: 1em; */
-}
-
-.project h4{
-  font-weight: 400;
-  margin: 10px 0 2px 0;
-  text-decoration: underline;
+.projects > .project{
+  margin: 40px 10px
 }

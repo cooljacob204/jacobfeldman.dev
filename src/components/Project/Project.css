@@ -1,0 +1,54 @@
+.project a {
+  display: flex;
+  height: 64px;
+  color: #2c2c2c;
+  font-size: 20px;
+  font-family: Roboto script=latin rev=2;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.project {
+  height: 5em;
+  width: 25em;
+}
+
+.project a:hover {
+  text-decoration: none;
+}
+
+.project__info {
+  margin-left: 10px;
+  padding-top: 13px;
+  transition: 0.3s;
+}
+
+.project__info div:last-child {
+  margin-top: .2em;
+  word-wrap: normal;
+  transition: 0.3s;
+  opacity: 0;
+  font-family: Open Sans script=latin rev=2;
+  font-weight: initial;
+  font-weight: 400;
+  word-wrap: balance;
+}
+
+.project:hover .project__info div:last-child {
+  opacity: 1;
+}
+
+.project:hover .project__info {
+  padding-top: 0px;
+}
+
+@media screen and (max-width: 864px) {
+  .project .project__info{
+    opacity: 1;
+    padding-top: 0px;
+  }
+
+  .project .project__info div:last-child {
+    opacity: 1;
+  }
+}

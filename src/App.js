@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import TopBar from './components/TopBar/TopBar';
-import Content from './components/Content/Content';
 import DARK_THEME from './themes/darkTheme.js'
 import LIGHT_THEME from './themes/lightTheme.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Project from './components/Project/Project';
+import { CURRENT_WEBSITE } from './constants/projects';
+import Me from './components/Me/Me';
+import Projects from './components/Project/Projects';
 
 function App() {
   const [theme, setTheme] = useState(defaultTheme())
@@ -22,7 +24,7 @@ function App() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches){
       return LIGHT_THEME
     } else {
-      return DARK_THEME
+      return LIGHT_THEME
     }
   }
 
@@ -40,9 +42,12 @@ function App() {
   }, [theme])
 
   return (
-    <div style={{...theme.App.div.style}} className="App">
-      <TopBar theme={theme} toggleTheme={toggleTheme}/>
-      <Content theme={theme} />
+    <div className="App">
+      <div className='top'>
+        <Project project={ CURRENT_WEBSITE }/>
+      </div>
+      <Me />
+      <Projects />
     </div>
   );
 }
