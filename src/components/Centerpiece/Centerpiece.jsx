@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './Me.css'
+import './Centerpiece.css'
 
 export default function Me(){
   const [width, setWidth] = useState(window.innerWidth)
