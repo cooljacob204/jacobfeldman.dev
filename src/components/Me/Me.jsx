@@ -15,7 +15,7 @@ export default function Me(){
   const calculateScale = () => {
     if (width < 864) {
       // return width * 0.0011574074
-      return width / 864
+      return Math.max((width / 864), .65)
     }
 
     return 1

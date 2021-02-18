@@ -6,7 +6,7 @@ const PROJECTS = [
     source: 'https://github.com/cooljacob204/unifi_api'
   },
   {
-    name: 'Videogame-Tracker',
+    name: 'Videogame Tracker',
     description: 'A website for tracking video games in your library',
     url: 'videogame-tracker.lfp2.dev',
     source: 'https://github.com/cooljacob204/videogame-tracker'

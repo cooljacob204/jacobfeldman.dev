@@ -8,3 +8,9 @@
 .projects > .project{
   margin: 40px 10px
 }
+
+@media screen and (max-width: 864px) {
+  .projects {
+    margin-top: 4%;
+  }
+}
