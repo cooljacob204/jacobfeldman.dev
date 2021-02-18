@@ -27,9 +27,11 @@ export default function Me(){
       <img src='/centerpiece/background2.svg' alt='background 2' />
       <img src='/centerpiece/JF.png' alt='initials' />
       <a href='https://www.linkedin.com/in/jacobgfeld/' target='_blank'>
+        <div />
         <img src='/centerpiece/linkedin-small-white.svg' alt='linkedin' />
       </a>
       <a href='https://github.com/cooljacob204' target='_blank'>
+        <div />
         <img src='/centerpiece/github-small-white.svg' alt='github' />
       </a>
       <img src='/centerpiece/me.png' alt='me' />
