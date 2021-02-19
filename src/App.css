@@ -58,8 +58,13 @@ body .App[theme="dark"]{
   }
 
   html, body, .App{
-    height: initial;
+    height: auto;
+    min-height: 100vh;
     overflow: initial;
+  }
+
+  .theme_select > div:first-child {
+    margin-left: 0px
   }
 }
 
