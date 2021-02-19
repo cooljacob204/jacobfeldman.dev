@@ -1,6 +1,5 @@
 const LIGHT_THEME = {
-  name: 'light',
-  stylesheet: 'themes/lightTheme.css'
+  name: 'light'
 }
 
 export default LIGHT_THEME

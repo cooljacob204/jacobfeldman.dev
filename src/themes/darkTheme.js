@@ -1,6 +1,5 @@
 const DARK_THEME = {
-  name: 'dark',
-  stylesheet: 'themes/darkTheme.css'
+  name: 'dark'
 }
 
 export default DARK_THEME
