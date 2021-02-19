@@ -5,12 +5,11 @@ import LIGHT_THEME from './themes/lightTheme.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Project from './components/Project/Project';
 import { CURRENT_WEBSITE } from './constants/projects';
-import Me from './components/Me/Me';
+import Me from './components/Centerpiece/Centerpiece';
 import Projects from './components/Project/Projects';
 
 function App() {
   const [theme, setTheme] = useState(defaultTheme())
-  document.body.style.backgroundColor = theme.App.body.style.backgroundColor
 
   function toggleTheme(){
     if (theme === DARK_THEME) {
@@ -24,30 +23,21 @@ function App() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches){
       return LIGHT_THEME
     } else {
-      return LIGHT_THEME
+      return DARK_THEME
     }
   }
 
-  useEffect(() => {
-    var head = document.head
-    var link = document.createElement("link")
-
-    link.type = "text/css"
-    link.rel = "stylesheet"
-    link.href = theme.stylesheet
-
-    head.appendChild(link)
-
-    return () => head.removeChild(link)
-  }, [theme])
-
   return (
-    <div className="App">
+    <div className="App" theme={theme.name}>
       <div className='top'>
         <Project project={ CURRENT_WEBSITE }/>
       </div>
       <Me />
       <Projects />
+      <div className='theme_select' onClick={() => toggleTheme()}>
+        <div>Dark Mode</div>
+        <div>Light Mode</div>
+      </div>
     </div>
   );
 }

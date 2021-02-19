@@ -1,11 +1,18 @@
 .project a {
   display: flex;
   height: 64px;
-  color: #2c2c2c;
   font-size: 20px;
   font-family: Roboto script=latin rev=2;
   font-weight: 700;
   font-style: normal;
+}
+
+.App[theme="light"] .project a {
+  color: #2c2c2c;
+}
+
+.App[theme="dark"] .project a {
+  color: #ffffff;
 }
 
 .project {
@@ -20,13 +27,13 @@
 .project__info {
   margin-left: 10px;
   padding-top: 13px;
-  transition: 0.3s;
+  transition: padding-top 0.3s;
 }
 
 .project__info div:last-child {
   margin-top: .2em;
   word-wrap: normal;
-  transition: 0.3s;
+  transition: opacity 0.3s;
   opacity: 0;
   font-family: Open Sans script=latin rev=2;
   font-weight: initial;

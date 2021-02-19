@@ -24,6 +24,14 @@
   left: 14px;
 }
 
+.App[theme='light'] .centerpiece > :nth-child(2):before {
+  content:url('/centerpiece/background2.svg')
+}
+
+.App[theme='dark'] .centerpiece > :nth-child(2):before {
+  content:url('/centerpiece/background2 - white.svg')
+}
+
 .centerpiece > :nth-child(3){
   z-index: 2;
   position: absolute;
@@ -31,69 +39,71 @@
   left: 379px;
 }
 
-.centerpiece > :nth-child(4){
-  z-index: 3;
+.App[theme='light'] .centerpiece > :nth-child(3):before {
+  content:url('/centerpiece/JF.png')
+}
+
+.App[theme='dark'] .centerpiece > :nth-child(3):before {
+  content:url('/centerpiece/JF - white.png')
+}
+
+.App[theme='light'] .centerpiece .icon > :first-child {
+  border: 2px solid #2c2c2c;
+}
+
+.App[theme='dark'] .centerpiece .icon > :first-child {
+  border: 2px solid #ffffff;
+}
+
+.App .centerpiece .icon > :first-child {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 4;
   width: 36px;
   height: 36px;
+}
+
+.App .centerpiece .icon > :last-child {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+}
+
+.App .centerpiece .icon:hover :first-child {
+  border: 2px solid #c50000;
+  transition: .3s;
+}
+
+.centerpiece > :nth-child(4) {
   left: 410px;
   top: 95px;
   position: absolute;
 }
 
-.centerpiece > :nth-child(4) div{
-  background-color: transparent;
-  border-radius: 50%;
-  position: absolute;
-  border: 2px solid #2c2c2c;
-  z-index: 4;
-  width: 36px;
-  height: 36px;
-  transition: .3s;
+.App[theme='light'] .centerpiece > :nth-child(4) :last-child:before {
+  content:url('/centerpiece/linkedin-small-dark.svg');
 }
 
-.centerpiece > :nth-child(4):hover div{
-  border: 2px solid #c50000;
+.App[theme='dark'] .centerpiece > :nth-child(4) :last-child:before {
+  content:url('/centerpiece/linkedin-small-white.svg');
 }
 
-.centerpiece > :nth-child(4) img{
-  position: absolute;
-  z-index: 3;
-  width: 36px;
-  height: 36px;
-}
-
-.centerpiece > :nth-child(5){
-  z-index: 3;
-  width: 36px;
-  height: 36px;
+.centerpiece > :nth-child(5) {
   left: 410px;
   top: 143px;
   position: absolute;
 }
 
-.centerpiece > :nth-child(5) div{
-  background-color: transparent;
-  border-radius: 50%;
-  position: absolute;
-  border: 2px solid #2c2c2c;
-  z-index: 4;
-  width: 36px;
-  height: 36px;
-  transition: .3s;
+.App[theme='light'] .centerpiece > :nth-child(5) :last-child:before {
+  content:url('/centerpiece/github-small-dark.svg');
 }
 
-.centerpiece > :nth-child(5):hover div{
-  border: 2px solid #c50000;
+.App[theme='dark'] .centerpiece > :nth-child(5) :last-child:before {
+  content:url('/centerpiece/github-small-white.svg');
 }
 
-.centerpiece > :nth-child(5) img{
-  position: absolute;
-  z-index: 3;
-  width: 36px;
-  height: 36px;
-}
-
-.centerpiece > :last-child{
+.centerpiece > :last-child {
   position: relative;
   z-index: 5;
 }

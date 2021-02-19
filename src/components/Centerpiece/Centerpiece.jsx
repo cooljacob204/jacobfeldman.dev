@@ -23,18 +23,18 @@ export default function Me(){
 
   return <div className='me'>
     <div className='centerpiece' style={{ transform: `scale(${calculateScale()})` }}>
-      <img src='/centerpiece/background1.svg' alt='background 1' />
-      <img src='/centerpiece/background2.svg' alt='background 2' />
-      <img src='/centerpiece/JF.png' alt='initials' />
-      <a href='https://www.linkedin.com/in/jacobgfeld/' target='_blank'>
-        <div />
-        <img src='/centerpiece/linkedin-small-white.svg' alt='linkedin' />
+      <img src='/centerpiece/background1.svg' />
+      <div /> {/* background2 image, div image set by css themes */}
+      <div /> {/* JF initials, div image set by css themes */}
+      <a href='https://www.linkedin.com/in/jacobgfeld/' target='_blank' className='icon'>
+        <div /> {/* boarder for image */}
+        <div />  {/* linkedin icon, div image set by css themes */}
       </a>
-      <a href='https://github.com/cooljacob204' target='_blank'>
-        <div />
-        <img src='/centerpiece/github-small-white.svg' alt='github' />
+      <a href='https://github.com/cooljacob204' target='_blank' className='icon'>
+        <div /> {/* boarder for image */}
+        <div />  {/* github icon, div image set by css themes */}
       </a>
-      <img src='/centerpiece/me.png' alt='me' />
+      <img src='/centerpiece/me.png' alt='picture of me' />
     </div>
   </div>
 }

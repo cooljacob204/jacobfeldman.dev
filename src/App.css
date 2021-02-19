@@ -19,6 +19,13 @@ html, body, .App{
   margin: 8px 12px 0 12px;
 }
 
+body .App[theme="light"]{
+  background-color: #ffffff;
+}
+
+body .App[theme="dark"]{
+  background-color: #343A40;
+}
 
 .full-name,
 .bio,
@@ -54,4 +61,37 @@ html, body, .App{
     height: initial;
     overflow: initial;
   }
+}
+
+.theme_select {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  cursor: pointer;
+  user-select: none;
+  transition: .2s;
+}
+
+.theme_select div {
+  margin: 0px 10px;
+}
+
+.theme_select > :first-child {
+  margin-left: -115px
+}
+
+.App[theme="light"] .theme_select {
+  color: #2c2c2c;
+}
+
+.App[theme="light"] .theme_select > :last-child {
+  font-weight: bold;
+}
+
+.App[theme="dark"] .theme_select {
+  color: #ffffff;
+}
+
+.App[theme="dark"] .theme_select > :first-child {
+  font-weight: bold;
 }
